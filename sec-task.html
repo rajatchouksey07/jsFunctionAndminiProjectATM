@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+	<head>
+		<title>RJT-secondCode</title>
+
+		<link rel="stylesheet" type="text/css" href="src/task2-rjt.css">
+		<script src="src/task2-rjt.js"></script>
+	</head>
+
+	<body>
+		<div id="heading">
+			<hr>
+				<h1 id="task" onMouseOver="changeTaskColorR()" onMouseOut="changeTaskColorY()"> bizTask 2 </h1>
+			<hr>
+		</div>
+
+		<div id="right"> click here for <a href="index.html" target="_blank">bizTask 1</a>.</div>
+
+		<div id="atm">
+			<hr>
+				<h1>Welcome to BizRunTime ATM</h1>
+			<hr>
+		</div>	
+		<br><br>
+		<div id="form">
+			<form name="laraATM" method="post" onSubmit="bank()">
+				Name : 
+				<input type="text" id="name" placeholder="Name" onMouseMove="checkName()" onKeyUp="checkName()"><br><br> 
+				
+				E-mail Address : 
+				<input type="email" id="email" name="email" placeholder="E-mail" onMouseMove="checkEmail()" onKeyUp="checkEmail()"><br><br> 
+				
+				PIN : 
+				<input type="password" id="PIN" placeholder="PIN" pattern="[0-9]{4}" maxlength="4" onMouseMove="checkPin()" onKeyUp="checkPin()"><br><br> 
+				
+				Confirm PIN :
+				<input type="password" id="re-PIN" placeholder="Retype PIN" pattern="[0-9]{4}" maxlength="4"  onMouseMove="checkRePin()" onKeyUp="checkRePin()"><br><br> 
+				
+				Mobile Number: 
+				<input type="number" id="tel" placeholder="Mobile Number" pattern="[0-9]{10}" onMouseMove="checkMobile()" onKeyUp="checkMobile()" onKeyPress="return checkTelNo(document.form.tel)" maxlength="10"><br><br> 
+				
+				<input type="button" id="submitForm" value="Sign-Up" onClick="bank()">
+			</form>
+			
+			<b id="error_v">&nbsp;</b><br>
+			<b id="checkName_v">&nbsp;</b><br>
+			<b id="checkEmail_v">&nbsp;</b><br>
+			<b id="checkPin_v">&nbsp;</b><br>
+			<b id="checkRePin_v">&nbsp;</b><br>
+			<b id="checkRePinMatch_v">&nbsp;</b><br>
+			<b id="checkMobile_v">&nbsp;</b><br>
+			<b id="test">&nbsp;</b><br>
+		</div>
+
+		<div id="bankData">
+			<p id="bank">&nbsp;</p>		
+			<hr>
+
+			<p id="error">&nbsp;</p>
+			<p id="msg">&nbsp;</p>
+			
+			<!-- <form> -->
+			Amount : <input type="number" id="amount" value="" placeholder="Enter amount." ><br><br>
+					 
+					 <table>
+					  <tbody>
+						<tr>
+						  <td><button id="1" value="1" onClick="atmKey(1)">1</button></td>
+						  <td><button id="2" value="2" onClick="atmKey(2)">2</button></td>
+						  <td><button id="3" value="3" onClick="atmKey(3)">3</button></td>
+						  <td><input type="button" id="deposit" value="Deposit" onClick="deposit()"></td>
+						</tr>
+						<tr>
+						  <td><button id="4" value="4" onClick="atmKey(4)">4</button></td>
+						  <td><button id="5" value="5" onClick="atmKey(5)">5</button></td>
+						  <td><button id="6" value="6" onClick="atmKey(6)">6</button></td>
+						  <td><button id="withdraw" onClick="withdraw()">Withdraw</button></td>
+						</tr>
+						<tr>
+						  <td><button id="7" value="7" onClick="atmKey(7)">7</button></td>
+						  <td><button id="8" value="8" onClick="atmKey(8)">8</button></td>
+						  <td><button id="9" value="9" onClick="atmKey(9)">9</button></td>
+						  <td><button id="clear" onClick="clear_reset()">Clear</button></td>
+						</tr>
+						<tr>
+						  <td><button onClick="atmKeyErr(10)">*</button></td>
+						  <td><button id="0" value="0" onClick="atmKey(0)">0</button></td>
+						  <td><button  onClick="atmKeyErr(20)">#</button></td>
+						  <td>&nbsp;</td>
+						</tr>
+					  </tbody>
+					</table>
+			<!--  </form> -->
+		</div>
+		
+	</body>
+</html>

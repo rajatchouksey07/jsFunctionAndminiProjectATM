@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>RJT-firstCode</title>
+
+		<link rel="stylesheet" type="text/css" href="src/task1-rjt.css">
+		<script src="src/task1-rjt.js"></script>
+	</head>
+
+	<body>
+		<div id="heading">
+			<hr>
+				<h1 id="task" onMouseOver="changeTaskColorR()" onMouseOut="changeTaskColorY()"> bizTask 1 </h1>
+			<hr>
+		</div>
+
+		<div id="right"> click here for <a href="sec-task.html" target="_blank"> bizTask 2 </a>.</div>
+
+		<p>
+			Name : <input type="text" id="name" placeholder="Name" onKeyUp="callMethod()">
+				   <button type="button" onMouseOver="showDate()">Date</button>
+				   <button type="button" onMouseOver="changeHTML()">Say hello to RJT</button>
+				   <button type="button" onMouseOver="fontSizeInc()" onMouseOut="fontSizeDec()">+</button>
+				   <button type="button" onMouseOver="hide()" onMouseOut="show()">Hide and Seek</button>
+		</p>
+
+		<hr>
+
+		<div id="img">
+			<img src="img/pic_bulboff.gif" id="lightOn" onMouseOver="lightOnOff()" onMouseOut="lightOffOn()" >
+		</div>
+
+		<div>	
+			<p id="rjt">&nbsp;</p>
+			<p id="value">&nbsp;</p>
+			<p id="toUpperCase">&nbsp;</p>
+			<p id="toLowerCase">&nbsp;</p>
+			<p id="length">&nbsp;</p>
+			<p id="split">&nbsp;</p>
+		</div>
+
+	</body>
+</html>

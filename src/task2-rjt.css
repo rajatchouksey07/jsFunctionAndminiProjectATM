@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+
+body
+{
+	background-color: rgb(250, 250, 250);
+}
+
+div#heading, #withdraw, #submitForm, #reset
+{
+	background-color: #0067b8;
+}
+
+#deposit
+{
+	background-color: green;
+}
+
+#clear
+{
+	color: black;
+	background-color: yellow;
+}
+
+#withdraw
+{
+	background-color: red;
+}
+
+#withdraw, #deposit, h1#task, #submitForm, #reset
+{
+	color: white;
+}
+
+h1, h1#task, div#bankData, div#form
+{
+	text-align: center;
+	text-align: -webkit-center;
+}
+
+div#right, div#divjs
+{
+	text-align: right;
+}
+
+h1#task
+{
+	text-decoration: underline;
+}
+
+p#msg, p#error, p#error_v
+{
+	font-weight: bold; 
+}
+
+div#bankData
+{
+	display: none;	
+}
+
+p#error, p#error_v, b#checkName_v, b#checkEmail_v, b#checkPin_v, b#checkRePin_v, b#checkRePinMatch_v, b#checkMobile_v, b#test
+{
+	color: orangered;
+}
+
+p#msg
+{
+	color: green; 
+}
+
+table
+{
+	 width: fit-content;
+	 cellspacing="10";
+	 cellpadding="10";
+}
